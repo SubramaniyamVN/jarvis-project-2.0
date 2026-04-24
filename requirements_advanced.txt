@@ -1,0 +1,71 @@
+# ═══════════════════════════════════════════════════════
+#   J.A.R.V.I.S — Advanced Requirements
+#   Install: pip install -r requirements_advanced.txt
+# ═══════════════════════════════════════════════════════
+
+# ── Phase 1: AI Brain ────────────────────────────────
+anthropic          # Claude API
+openai             # GPT-4 API (alternative)
+
+# ── Phase 2: Wake Word ───────────────────────────────
+pvporcupine        # Wake word detection (needs free API key from picovoice.ai)
+
+# ── Phase 3: Face Recognition ────────────────────────
+opencv-python      # Webcam + image processing
+face-recognition   # Face detection & matching
+dlib               # Required by face-recognition (may need cmake)
+
+# ── Phase 4: HUD + System ────────────────────────────
+pyautogui          # Mouse, keyboard, screenshots
+psutil             # CPU, RAM, disk, battery stats
+screen-brightness-control  # Brightness control
+pycaw              # Windows volume control (Windows only)
+comtypes           # Required by pycaw
+
+# ── Phase 5: Email & WhatsApp ────────────────────────
+pywhatkit          # WhatsApp web automation
+requests           # HTTP requests
+
+# ── Phase 6: Smart Home ──────────────────────────────
+# requests already above
+# Optional Tuya smart devices:
+# tinytuya
+
+# ── Phase 7: Memory ──────────────────────────────────
+# sqlite3 is built into Python — no install needed
+
+# ── Phase 8: Code Assistant ──────────────────────────
+# subprocess is built into Python — no install needed
+
+# ── Phase 9: Web Automation ──────────────────────────
+selenium           # Browser automation
+webdriver-manager  # Auto-download ChromeDriver
+
+# ── Phase 10: News & Reminders ───────────────────────
+feedparser         # RSS news feed parser
+
+# ── Phase 11: Custom Voice ───────────────────────────
+elevenlabs         # AI voice synthesis (needs API key)
+
+# ── Phase 12: PC Monitoring ──────────────────────────
+GPUtil             # GPU monitoring (needs NVIDIA GPU)
+
+# ── Phase 13: Image Generation ───────────────────────
+# openai already above (for DALL-E 3)
+# For local Stable Diffusion (needs GPU):
+# diffusers
+# transformers
+# torch
+
+# ── Phase 14: Offline Mode ───────────────────────────
+openai-whisper     # Offline speech-to-text
+soundfile          # Audio file handling for Whisper
+# Ollama: install separately from https://ollama.ai
+
+# ── Core Voice Engine ────────────────────────────────
+pyttsx3            # Text-to-speech
+SpeechRecognition  # Google Speech Recognition
+pyaudio            # Microphone access
+wikipedia          # Wikipedia search
+pyperclip          # Clipboard access
+winshell           # Recycle bin (Windows only)
